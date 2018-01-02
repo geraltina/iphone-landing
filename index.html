@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaTube</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">Мой аккаунт</li>
+          <li class="main-nav__item">Просмотренное</li>
+          <li class="main-nav__item">Плэйлист</li>
+          <li class="main-nav__item">Выход</li>
+        </ul>
+      </nav>
+      <img src="img/logo.png" alt="MegaTube" class="page-header__logo">
+      <form method="get" action="#" class="search-form">
+        <input type="search" id="search" class="page-header__search" placeholder="Найти...">
+        <label for="search" class="visually-hidden">Поиск. Введите свой запрос</label>
+        <input type="image" src="img/search-icon.png">
+      </form>
+    </header>
+    <main class="main-page">
+      <section class="video">
+        <article class="video__frame frame">
+          <img src="img/preview.jpg" alt="Превью видео" class="frame__image">
+          <div class="frame__watch-button watch">
+            <button type="button" class="watch__button">Смотреть</button>
+            <span class="watch__text">
+              Услуга предоставляется только лицам,
+              достигшим совершеннолетия. Услуга платная.
+            </span>
+          </div>
+          <div class="frame__scroll scroll">
+            <span class="scroll__load"></span>
+            <span class="scroll__blue"></span>
+            <span class="scroll__controller"></span>
+          </div>
+          <div class="frame__functions functions">
+            <div class="functions__inline-left">
+              <button type="button" class="functions__play">Воспроизвести видео</button>
+              <button type="button" class="functions__next">Следующее видео</button>
+              <button type="button" class="functions__sound">Изменить громкость видео</button>
+              <div class="functions__time time">
+                <span class="time__white">2:23 </span>
+                <span class="time__grey">/ 7:31</span>
+              </div>
+            </div>
+            <div class="functions__inline-right">
+              <button type="button" class="functions__expand">Увеличить видео</button>
+              <button type="button" class="functions__fullscreen">Во весь экран</button>
+              <button type="button" class="functions__hd">Изменить качество видео</button>
+            </div>
+          </div>
+        </article>
+        <section class="video__info info">
+          <div class="info__inline-left">
+            <h1 class="info__header">Borat__greets.mp4</h1>
+            <span class="info__viewers"></span>
+          </div>
+          <div class="info__inline-right">
+            <div class="info__rating">
+              <button class="info__likes" type="button">14 тыс.</button>
+              <button class="info__dislikes" type="button">503</button>
+            </div>
+            <div class="info__functions">
+              <button type="button">Добавить видео</button>
+              <button type="button">Отправить видео к себе на страницу</button>
+              <button type="button">Добавить видео в закладки</button>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="recommended-video">
+        <div class="recommended-video__inline-left">
+          <img src="img/preview-small-1.jpg" alt="Смотреть мультфильм" class="recommended-video__preview">
+        </div>
+        <div class="recommended-video__inline-right">
+          <img src="img/preview-small-2.jpg" alt="Смотреть мультфильм" class="recommended-video__preview">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__text">
+        Стоимость подписки на услугу: 8,5 грн. (с НДС и ПФ).
+        Продление подписки на каждые следующие сутки – автоматическое.
+        Нажатием кнопки «Смотреть» Вы подключаете подписку smotri.club
+        и подтверждаете, что ознакомлены с
+        <a href="#" class="page-footer__link-small">
+          особенностями предоставления услуги
+        </a>.
+        Стоимость подписки списывается с лицевого счета абонента.
+        Бонус: если на счете менее 8,5 грн., стоимость по сниженной цене – 4,25 грн.
+        (с НДС и ПФ). Тех. поддержка: 504 с мобильного (бесплатно)
+      </p>
+      <a href="#" class="page-footer__link-big">Вернуться</a>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
