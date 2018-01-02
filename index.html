@@ -17,10 +17,10 @@
         </ul>
       </nav>
       <img src="img/logo.png" alt="MegaTube" class="page-header__logo">
-      <form method="get" action="#" class="search-form">
-        <input type="search" id="search" class="page-header__search" placeholder="Найти...">
+      <form method="get" action="#" class="page-header__search  search-form">
+        <input type="search" id="search" class="search-form__field" placeholder="Найти...">
         <label for="search" class="visually-hidden">Поиск. Введите свой запрос</label>
-        <input type="image" src="img/search-icon.png">
+        <button type="submit" class="search-form__submit">Начать поиск</button>
       </form>
     </header>
     <main class="main-page">
@@ -93,11 +93,23 @@
           особенностями предоставления услуги
         </a>.
         Стоимость подписки списывается с лицевого счета абонента.
-        Бонус: если на счете менее 8,5 грн., стоимость по сниженной цене – 4,25 грн.
+        Бонус: если на счете менее 8,5 грн.,
+        стоимость по сниженной цене – 4,25 грн.
         (с НДС и ПФ). Тех. поддержка: 504 с мобильного (бесплатно)
       </p>
       <a href="#" class="page-footer__link-big">Вернуться</a>
     </footer>
+    <section class="popup visually-hidden">
+      <button type="button" class="popup__close">Закрыть модальное окно</button>
+      <input type="checkbox" class="popup__checkbox" id="confirmation">
+      <label for="confirmation" class="popup__text">
+        Подветрдите, что вы согласны с
+        <a href="#" class="popup__link">
+          условиями предоставления сервиса
+        </a>
+      </label>
+      <button type="submit" class="popup__submit">Продолжить</button>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
