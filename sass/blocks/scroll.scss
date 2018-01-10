@@ -1,0 +1,32 @@
+.scroll__load {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 296px;
+  height: 10px;
+  background-color: #464646;
+}
+
+.scroll__blue {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 116px;
+  height: 10px;
+  background-color: #499ccc;
+}
+
+.scroll__controller {
+  position: absolute;
+  z-index: 3;
+  top: -4px;
+  left: 108px;
+  width: 7px;
+  height: 7px;
+  background-color: #aeaeae;
+  border: 5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}

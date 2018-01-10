@@ -1,0 +1,27 @@
+.frame {
+  position: relative;;
+}
+
+.frame__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 207px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.frame__scroll {
+  position: relative;
+  margin-top: -3px;
+  width: 320px;
+  height: 10px;
+  background-color: #272727;
+}
+
+.frame-functions {
+  display: flex;
+  width: 320px;
+  height: 30px;
+}

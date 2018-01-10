@@ -1,0 +1,50 @@
+.watch {
+  position: absolute;
+  top: 53px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 26px;
+  padding-right: 19px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  width: 265px;
+  background-color: #027799;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.watch__button {
+  position: relative;
+  padding: 0;
+  padding-right: 49px;
+  margin-bottom: 14px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/triangle.png");
+  }
+}
+
+.watch__text {
+  font-size: 10px;
+  line-height: 10px;
+  color: #cfcfcf;
+}

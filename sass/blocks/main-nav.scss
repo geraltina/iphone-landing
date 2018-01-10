@@ -1,0 +1,44 @@
+.main-nav {
+  display: none;
+  color: white;
+  background-color: #555555;
+  list-style: none;
+}
+
+.main-nav--opened {
+  display: block;
+}
+
+.main-nav__list {
+  position: relative;
+  padding: 0;
+  padding-top: 19px;
+  margin: 0;
+  width: 220px;
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 220px;
+    height: 1px;
+    background-color: #6e6e6e;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+  padding: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    height: 1px;
+    background-color: #6e6e6e;
+  }
+}

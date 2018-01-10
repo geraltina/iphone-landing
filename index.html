@@ -6,108 +6,120 @@
     <title>MegaTube</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">Мой аккаунт</li>
-          <li class="main-nav__item">Просмотренное</li>
-          <li class="main-nav__item">Плэйлист</li>
-          <li class="main-nav__item">Выход</li>
-        </ul>
-      </nav>
-      <img src="img/logo.png" alt="MegaTube" class="page-header__logo">
-      <form method="get" action="#" class="page-header__search  search-form">
-        <input type="search" id="search" class="search-form__field" placeholder="Найти...">
-        <label for="search" class="visually-hidden">Поиск. Введите свой запрос</label>
-        <button type="submit" class="search-form__submit">Начать поиск</button>
-      </form>
-    </header>
-    <main class="main-page">
-      <section class="video">
-        <article class="video__frame frame">
-          <img src="img/preview.jpg" alt="Превью видео" class="frame__image">
-          <div class="frame__watch-button watch">
-            <button type="button" class="watch__button">Смотреть</button>
-            <span class="watch__text">
-              Услуга предоставляется только лицам,
-              достигшим совершеннолетия. Услуга платная.
-            </span>
-          </div>
-          <div class="frame__scroll scroll">
-            <span class="scroll__load"></span>
-            <span class="scroll__blue"></span>
-            <span class="scroll__controller"></span>
-          </div>
-          <div class="frame__functions functions">
-            <div class="functions__inline-left">
-              <button type="button" class="functions__play">Воспроизвести видео</button>
-              <button type="button" class="functions__next">Следующее видео</button>
-              <button type="button" class="functions__sound">Изменить громкость видео</button>
-              <div class="functions__time time">
-                <span class="time__white">2:23 </span>
-                <span class="time__grey">/ 7:31</span>
+  <body class="page-body">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Мой аккаунт</li>
+        <li class="main-nav__item">Просмотренное</li>
+        <li class="main-nav__item">Плэйлист</li>
+        <li class="main-nav__item">Выход</li>
+      </ul>
+    </nav>
+    <div class="page-body__wrapper">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <button type="button" class="page-header__nav-toggle  nav-toggle  nav-toggle--closed">Меню</button>
+          <a><img src="img/logo.png" alt="MegaTube" class="page-header__logo" width="96" height="19"></a>
+          <form method="get" action="#" class="page-header__search  search-form">
+            <input type="search" id="search" class="search-form__field" placeholder="Найти...">
+            <label for="search" class="visually-hidden">Поиск. Введите свой запрос</label>
+            <button type="submit" class="search-form__submit">Начать поиск</button>
+          </form>
+        </div>
+      </header>
+      <main class="main-page">
+        <section class="video">
+          <article class="video__frame  frame">
+            <img src="img/preview.jpg" alt="Превью видео" class="frame__image" width="320" height="207">
+            <div class="frame__wrapper">
+              <div class="frame__watch-button  watch">
+                <button type="button" class="watch__button">Смотреть</button>
+                <span class="watch__text">
+                  Услуга предоставляется только лицам,
+                  достигшим совершеннолетия. Услуга платная.
+                </span>
               </div>
             </div>
-            <div class="functions__inline-right">
-              <button type="button" class="functions__expand">Увеличить видео</button>
-              <button type="button" class="functions__fullscreen">Во весь экран</button>
-              <button type="button" class="functions__hd">Изменить качество видео</button>
+            <div class="frame__scroll scroll">
+              <span class="scroll__load"></span>
+              <span class="scroll__blue"></span>
+              <span class="scroll__controller"></span>
             </div>
-          </div>
-        </article>
-        <section class="video__info info">
-          <div class="info__inline-left">
-            <h1 class="info__header">Borat__greets.mp4</h1>
-            <span class="info__viewers"></span>
-          </div>
-          <div class="info__inline-right">
-            <div class="info__rating">
-              <button class="info__likes" type="button">14 тыс.</button>
-              <button class="info__dislikes" type="button">503</button>
+            <div class="frame__functions functions">
+              <div class="functions__group">
+                <button type="button" class="functions__item  functions__play">Воспроизвести видео</button>
+                <button type="button" class="functions__item  functions__next">Следующее видео</button>
+                <button type="button" class="functions__item  functions__sound">Изменить громкость видео</button>
+                <div class="functions__time  time">
+                  <span class="time__white">2:23 / <span class="time__grey">7:31</span></span>
+                </div>
+              </div>
+              <div class="functions__group">
+                <button type="button" class="functions__item  functions__expand">Увеличить видео</button>
+                <button type="button" class="functions__item  functions__fullscreen">Во весь экран</button>
+                <button type="button" class="functions__item  functions__hd">Изменить качество видео</button>
+              </div>
             </div>
-            <div class="info__functions">
-              <button type="button">Добавить видео</button>
-              <button type="button">Отправить видео к себе на страницу</button>
-              <button type="button">Добавить видео в закладки</button>
+          </article>
+          <section class="video__info  info">
+            <div class="info__group">
+              <h1 class="info__header">Borat_greets.mp4</h1>
+              <span class="info__viewers">728 904 просмотра</span>
             </div>
+            <div class="info__group">
+              <div class="info__rating">
+                <button class="info__likes  info__like" type="button">Like</button>
+                <span class="info__text">14 тыс.</span>
+                <button class="info__likes  info__dislike" type="button">Dislike</button>
+                <span class="info__text">503</span>
+              </div>
+              <div class="info__functions">
+                <button class="info__function  info__add" type="button">Добавить видео</button>
+                <button class="info__function  info__repost" type="button">Отправить видео к себе на страницу</button>
+                <button class="info__function  info__import" type="button">Добавить видео в закладки</button>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="recommended-video">
+          <div class="recommended-video__wrapper">
+            <img src="img/preview-small-1.jpg" alt="Смотреть мультфильм" class="recommended-video__item" width="132" height="74">
+            <img src="img/preview-small-2.jpg" alt="Смотреть мультфильм" class="recommended-video__item" width="132" height="74">
           </div>
         </section>
-      </section>
-      <section class="recommended-video">
-        <div class="recommended-video__inline-left">
-          <img src="img/preview-small-1.jpg" alt="Смотреть мультфильм" class="recommended-video__preview">
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <p class="page-footer__text">
+            Стоимость подписки на услугу: 8,5 грн. (с НДС и ПФ).
+            Продление подписки на каждые следующие сутки – автоматическое.
+            Нажатием кнопки «Смотреть» Вы подключаете подписку smotri.club
+            и подтверждаете, что ознакомлены с
+            <a href="#" class="page-footer__link  page-footer__link--small">особенностями предоставления услуги</a>.
+            Стоимость подписки списывается с лицевого счета абонента.
+            Бонус: если на счете менее 8,5 грн.,
+            стоимость по сниженной цене – 4,25 грн.
+            (с НДС и ПФ). Тех. поддержка: 504 с мобильного (бесплатно)
+          </p>
+          <a href="#" class="page-footer__link  page-footer__link--big">Вернуться</a>
         </div>
-        <div class="recommended-video__inline-right">
-          <img src="img/preview-small-2.jpg" alt="Смотреть мультфильм" class="recommended-video__preview">
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <p class="page-footer__text">
-        Стоимость подписки на услугу: 8,5 грн. (с НДС и ПФ).
-        Продление подписки на каждые следующие сутки – автоматическое.
-        Нажатием кнопки «Смотреть» Вы подключаете подписку smotri.club
-        и подтверждаете, что ознакомлены с
-        <a href="#" class="page-footer__link-small">
-          особенностями предоставления услуги
-        </a>.
-        Стоимость подписки списывается с лицевого счета абонента.
-        Бонус: если на счете менее 8,5 грн.,
-        стоимость по сниженной цене – 4,25 грн.
-        (с НДС и ПФ). Тех. поддержка: 504 с мобильного (бесплатно)
-      </p>
-      <a href="#" class="page-footer__link-big">Вернуться</a>
-    </footer>
-    <section class="popup visually-hidden">
+      </footer>
+    </div>
+
+    <!-- Серый фон, появляется при открытии попапа -->
+    <div class="black-bg"></div>
+
+    <section class="popup">
       <button type="button" class="popup__close">Закрыть модальное окно</button>
-      <input type="checkbox" class="popup__checkbox" id="confirmation">
-      <label for="confirmation" class="popup__text">
-        Подветрдите, что вы согласны с
-        <a href="#" class="popup__link">
-          условиями предоставления сервиса
-        </a>
-      </label>
+      <div class="popup__check">
+        <input type="checkbox" class="popup__checkbox" id="confirmation">
+        <label for="confirmation" class="popup__label  popup__text">
+          Подтвердите, что вы согласны с
+          <a href="#" class="popup__text">
+            условиями предоставления сервиса
+          </a>
+        </label>
+      </div>
       <button type="submit" class="popup__submit">Продолжить</button>
     </section>
     <script src="js/script.js"></script>
