@@ -1,0 +1,23 @@
+.page-body {
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 100%;
+  font-size: 18px;
+  line-height: 18px;
+  color: #888888;
+  font-family: "Arial", sans-serif;
+}
+
+.page-body__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  overflow: hidden;
+}

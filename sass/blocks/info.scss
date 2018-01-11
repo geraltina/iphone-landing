@@ -1,0 +1,104 @@
+.info {
+  display: flex;
+  padding-top: 8px;
+  padding-left: 9px;
+  padding-right: 10px;
+  margin-bottom: 16px;
+}
+
+.info__group {
+  margin-right: 26px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.info__header {
+  margin: 0;
+  margin-bottom: 3px;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+
+.info__viewers {
+  font-size: 11px;
+  line-height: 11px;
+  color: #767676;
+}
+
+.info__rating {
+  display: flex;
+  margin-bottom: 10px;
+  width: 132px;
+}
+
+.info__text {
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #a4a7ac;
+}
+
+.info__likes {
+  width: 20px;
+  height: 0;
+  padding: 0;
+  padding-top: 17px;
+  overflow: hidden;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/video-info-spr.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.info__like {
+  background-position: 0 0;
+  margin-right: 8px;
+}
+
+.info__dislike {
+  margin-top: 2px;
+  margin-left: 9px;
+  margin-right: 14px;
+  background-position: 0 -26px;
+}
+
+.info__functions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info__function {
+  margin-right: 9px;
+  height: 0;
+  overflow: hidden;
+  background-color: transparent;
+  background-image: url("../img/video-info-spr.png");
+  border: 0;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.info__add {
+  width: 12px;
+  padding-top: 12px;
+  background-position: -4px -58px;
+}
+
+.info__repost {
+  width: 15px;
+  padding-top: 12px;
+  background-position: -3px -86px;
+}
+
+.info__import {
+  width: 9px;
+  padding-top: 11px;
+  background-position: -10px -114px;
+}

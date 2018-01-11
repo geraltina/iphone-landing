@@ -1,0 +1,19 @@
+.page-header {
+  max-width: 720px;
+  background-color: #cacaca;
+}
+
+.page-header__wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.page-header__logo {
+  margin-right: 23px;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  width: 96px;
+  height: 19px;
+}

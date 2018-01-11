@@ -1,0 +1,49 @@
+.nav-toggle {
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.nav-toggle--closed {
+  margin: 0 10px;
+  margin-top: 18px;
+  width: 15px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url("../img/hamburger.png");
+  background-repeat: no-repeat;
+}
+
+.nav-toggle--opened {
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+  margin-left: 11px;
+  margin-top: 19px;
+  width: 25px;
+  height: 0;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 15px;
+    height: 3px;
+    background-color: #222222;
+    transform: rotate(-18deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    width: 15px;
+    height: 3px;
+    background-color: #222222;
+    transform: rotate(11deg);
+  }
+}
